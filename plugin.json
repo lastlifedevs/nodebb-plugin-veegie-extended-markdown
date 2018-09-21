@@ -1,8 +1,8 @@
 {
-	"id": "nodebb-plugin-spoilers",
-	"name": "Spoilers for NodeBB",
-	"description": "Allows you to embed spoilers in NodeBB post content",
-	"url": "https://github.com/psychobunny/nodebb-plugin-spoilers",
+	"id": "nodebb-plugin-veegie-extended-markdown",
+	"name": "Extended Markdown for NodeBB",
+	"description": "Adds support for a few non-standard Markdown options. A fork of nodebb-plugin-spoilers.",
+	"url": "https://github.com/lastlifedevs/nodebb-plugin-veegie-extended-markdown",
 	"library": "./library.js",
 	"hooks": [
 		{ "hook": "filter:parse.post", "method": "parse", "priority": 6 },
@@ -12,9 +12,9 @@
 		"static": "./static"
 	},
 	"less": [
-    	"./static/spoilers.less"
+    	"./static/extended-markdown.less"
     ],
     "scripts": [
-		"static/spoilers.js"
+		"static/extended-markdown.js"
 	]
 }

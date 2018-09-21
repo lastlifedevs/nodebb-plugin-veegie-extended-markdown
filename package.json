@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-plugin-spoilers",
-  "version": "0.1.3",
-  "description": "Spoilers for NodeBB",
+  "name": "nodebb-plugin-veegie-extended-markdown",
+  "version": "0.0.0",
+  "description": "Adds support for a few non-standard Markdown options. A fork of nodebb-plugin-spoilers.",
   "main": "library.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers"
+    "url": "https://github.com/lastlifedevs/nodebb-plugin-veegie-extended-markdown"
   },
   "keywords": [
     "nodebb",
@@ -17,18 +17,16 @@
     "text"
   ],
   "author": {
-    "name": "psychobunny",
-    "email": "psycho.bunny@hotmail.com"
+    "name": "veegie",
+    "email": "veegie@last-life.net"
   },
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers/issues"
+    "url": "https://github.com/lastlifedevs/nodebb-plugin-veegie-extended-markdown/issues"
   },
   "nbbpm": {
     "compatibility": "^0.6.0"
   },
   "readme": "",
-  "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-spoilers@0.0.1",
-  "_from": "nodebb-plugin-spoilers@~0.0.1"
+  "readmeFilename": "README.md"
 }
