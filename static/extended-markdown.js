@@ -2,7 +2,7 @@ $('document').ready(function() {
 	require(['composer', 'composer/controls'], function(composer, controls) {
 		composer.addButton('fa fa-eye-slash', function(textarea, selectionStart, selectionEnd) {
 			var prefix = '>! ';
-			var title = '(Spoiler) ';
+			var title = '(Spoiler Title) ';
 			if(selectionStart === selectionEnd){
 				var text = 'Text';
 				controls.insertIntoTextarea(textarea, prefix + title + text);
