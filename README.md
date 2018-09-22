@@ -1,11 +1,8 @@
-# Spoilers for NodeBB
+# Extended Markdown for NodeBB
 
-Allows you to embed spoilers in NodeBB post content. Just use the following syntax, which is similar to that found on StackExchange.
+Adds support for a few non-standard Markdown options. A fork of [nodebb-plugin-spoilers](https://github.com/NodeBB-Community/nodebb-plugin-spoilers/), including its spoiler tag functionality.
 
-```
->! spoiler text here
-```
+Currently supports:
 
-## Installation
-
-    npm install nodebb-plugin-spoilers
+* Spoilers
+* The insertion of a basic table along with a link to allow users to learn the Markdown table syntax.

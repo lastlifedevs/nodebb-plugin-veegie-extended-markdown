@@ -12,5 +12,14 @@ $('document').ready(function() {
 				controls.updateTextareaSelection(textarea, selectionStart + (prefix.length + title.length), selectionEnd + (prefix.length + title.length));
 			}
 		});
+		composer.addButton('fa fa-table', function(textarea, selectionStart, selectionEnd) {
+			var sampleTable = '| Here\'s     |   a Sample        |  Table |\n'
+				+'|---------------|-------------------------|------------|\n'
+				+'| See         | this guide          | for       |\n'
+				+'| more      | details on          | how     |\n'
+				+'| to make | make this look | good:  |\n\nhttps://www.markdownguide.org/extended-syntax/#tables';
+			controls.insertIntoTextarea(textara, sampleTable);
+			controls.updateTextareaSelection(textArea, selectionStart, selectionStart + sampleTable.length);
+		});
 	});
 });
