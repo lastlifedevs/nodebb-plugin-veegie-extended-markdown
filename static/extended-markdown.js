@@ -18,8 +18,8 @@ $('document').ready(function() {
 				+'| See         | this guide          | for       |\n'
 				+'| more      | details on          | how     |\n'
 				+'| to make | make this look | good:  |\n\nhttps://www.markdownguide.org/extended-syntax/#tables';
-			controls.insertIntoTextarea(textara, sampleTable);
-			controls.updateTextareaSelection(textArea, selectionStart, selectionStart + sampleTable.length);
+			controls.insertIntoTextarea(textarea, sampleTable);
+			controls.updateTextareaSelection(textarea, selectionStart, selectionStart + sampleTable.length);
 		});
 	});
 });
