@@ -21,5 +21,28 @@ $('document').ready(function() {
 			controls.insertIntoTextarea(textarea, sampleTable);
 			controls.updateTextareaSelection(textarea, selectionStart, selectionStart + sampleTable.length);
 		}, 'Table');
+		composer.addButton('fa fa-align-center', function(textarea, selectionStart, selectionEnd) {
+			var tag = '::';
+			if(selectionStart === selectionEnd){
+				var text = 'Centered Text';
+				controls.insertIntoTextarea(textarea, tag + text + tag);
+				controls.updateTextareaSelection(textarea, selectionStart + (tag.length), selectionStart + (tag.length + text.length));
+			} else {
+				controls.wrapSelectionInTextareaWith(textarea, tag, tag);
+				controls.updateTextareaSelection(textarea, selectionStart + (tag.length), selectionEnd + (tag.length));
+			}
+		}, 'Center Align');
+		composer.addButton('fa fa-align-right', function(textarea, selectionStart, selectionEnd) {
+			var prefix = ':';
+			var suffix = '::';
+			if(selectionStart === selectionEnd){
+				var text = 'Right-aligned Text';
+				controls.insertIntoTextarea(textarea, prefix + text + suffix);
+				controls.updateTextareaSelection(textarea, selectionStart + (prefix.length), selectionStart + (prefix.length + text.length));
+			} else {
+				controls.wrapSelectionInTextareaWith(textarea, prefix, suffix);
+				controls.updateTextareaSelection(textarea, selectionStart + (prefix.length), selectionEnd + (prefix.length));
+			}
+		}, 'Right Align');
 	});
 });
