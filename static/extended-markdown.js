@@ -17,7 +17,7 @@ $('document').ready(function() {
 				+'|---------------|-------------------------|------------|\n'
 				+'| See         | this guide          | for       |\n'
 				+'| more      | details on          | how     |\n'
-				+'| to make | make this look | good:  |\n\nhttps://www.markdownguide.org/extended-syntax/#tables';
+				+'| to | make this look | good:  |\n\nhttps://www.markdownguide.org/extended-syntax/#tables';
 			controls.insertIntoTextarea(textarea, sampleTable);
 			controls.updateTextareaSelection(textarea, selectionStart, selectionStart + sampleTable.length);
 		}, 'Table');
